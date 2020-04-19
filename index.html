@@ -2,12 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Web150 homework</title>
+    <title>Constructive &amp; Co.</title>
   </head>
   <body>
-    <p>Welcome to my calculator</p>
+    <h1>Constructive &amp; Co.</h1>
     <script>
-      document.write("The sum of 5 + 7 is :",5 +7);
+
+      //declare variables
+      var today = new Date();
+      var hourNow = today.getHours();
+      var greeting;
+
+      //setup the conditional statement
+      if (hourNow > 18) {
+         greeting = "Good evening!"
+      } else if (hourNow > 12) {
+         greeting = "Good afternoon"
+      } else if (hourNow >0) {
+         greeting = "Good morning!"
+      } else {
+         greeting = "Welcome!"
+      }
+
+      document.write(greeting);
+
     </script>
 
   </body>
